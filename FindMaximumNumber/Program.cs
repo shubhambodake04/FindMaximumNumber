@@ -15,6 +15,9 @@ namespace FindMaximumNumber
             int MaxNumber = Check.MaximumInteger(11, 22, 33);
             Console.WriteLine(MaxNumber);
 
+            float MaxNumber1 = Check.MaximumFloat(4.8f, 2.7f, 3.9f);
+            Console.WriteLine(MaxNumber1);
+
             Console.ReadLine();
 
         }
