@@ -20,5 +20,12 @@ namespace MaximunNumber_MSTest
             float result = Check.MaximumFloat(4.8f, 2.7f, 3.9f);
             Assert.AreEqual(result, 4.8f);
         }
+
+        [TestMethod]
+        public void MaximumString()
+        {
+            string result = Check.MaximumString("shubham","amol","ravi");
+            Assert.AreEqual(result, "shubham");
+        }
     }
 }

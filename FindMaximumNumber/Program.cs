@@ -18,6 +18,9 @@ namespace FindMaximumNumber
             float MaxNumber1 = Check.MaximumFloat(4.8f, 2.7f, 3.9f);
             Console.WriteLine(MaxNumber1);
 
+            string MaxNumber2 = Check.MaximumString("shubham","amol","ravi");
+            Console.WriteLine(MaxNumber2);
+
             Console.ReadLine();
 
         }

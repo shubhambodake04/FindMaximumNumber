@@ -27,6 +27,8 @@ namespace FindMaximumNumber
 
         }
 
+        
+
         public static float MaximumFloat(float firstNumber, float secondtNumber, float thirdtNumber)
         {
 
@@ -43,6 +45,25 @@ namespace FindMaximumNumber
                 return thirdtNumber;
             }
             throw new Exception("firstNumber,secondNumber,ThirdNumber are same");
+
+        }
+
+        public static string MaximumString(string first, string second, string third)
+        {
+
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                return first;
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                return second;
+            }
+            else if (third.CompareTo(second) > 0 && third.CompareTo(first) > 0)
+            {
+                return third;
+            }
+            throw new Exception("first,second,Third are same");
 
         }
     }
