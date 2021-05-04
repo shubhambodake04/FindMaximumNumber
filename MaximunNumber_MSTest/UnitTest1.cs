@@ -10,7 +10,8 @@ namespace MaximunNumber_MSTest
         [TestMethod]
         public void MaximumInteger()
         {
-
+            int result = Check.MaximumInteger(11, 22, 33);
+            Assert.AreEqual(result, 33);
         }
     }
 }

@@ -11,7 +11,11 @@ namespace FindMaximumNumber
         static void Main(string[] args)
         {
 
-            
+            Console.WriteLine("maximum number:");
+            int MaxNumber = Check.MaximumInteger(11, 22, 33);
+            Console.WriteLine(MaxNumber);
+
+            Console.ReadLine();
 
         }
     }
