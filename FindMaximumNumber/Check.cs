@@ -8,62 +8,62 @@ namespace FindMaximumNumber
 {
    public class Check
     {
-        public static int MaximumInteger(int firstNumber, int secondtNumber, int thirdtNumber)
+        public static int MaximumInteger(int FirstValue, int SecondValue, int ThirdValue)
         {
 
-            if (firstNumber.CompareTo(secondtNumber) > 0 && firstNumber.CompareTo(thirdtNumber) > 0)
+            if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
             {
-                return firstNumber;
+                return FirstValue;
             }
-            else if (secondtNumber.CompareTo(firstNumber) > 0 && secondtNumber.CompareTo(thirdtNumber) > 0)
+            else if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)
             {
-                return secondtNumber;
+                return SecondValue;
             }
-            else if (thirdtNumber.CompareTo(secondtNumber) > 0 && thirdtNumber.CompareTo(firstNumber) > 0)
+            else if (ThirdValue.CompareTo(SecondValue) > 0 && ThirdValue.CompareTo(FirstValue) > 0)
             {
-                return thirdtNumber;
+                return ThirdValue;
             }
-            throw new Exception("firstNumber,secondNumber,ThirdNumber are same");
+            throw new Exception("FirstValue,SecondValue,ThirdValue are same");
 
         }
 
         
 
-        public static float MaximumFloat(float firstNumber, float secondtNumber, float thirdtNumber)
+        public static float MaximumFloat(float FirstValue, float SecondValue, float ThirdValue)
         {
 
-            if (firstNumber.CompareTo(secondtNumber) > 0 && firstNumber.CompareTo(thirdtNumber) > 0)
+            if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
             {
-                return firstNumber;
+                return FirstValue;
             }
-            else if (secondtNumber.CompareTo(firstNumber) > 0 && secondtNumber.CompareTo(thirdtNumber) > 0)
+            else if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)
             {
-                return secondtNumber;
+                return SecondValue;
             }
-            else if (thirdtNumber.CompareTo(secondtNumber) > 0 && thirdtNumber.CompareTo(firstNumber) > 0)
+            else if (ThirdValue.CompareTo(SecondValue) > 0 && ThirdValue.CompareTo(FirstValue) > 0)
             {
-                return thirdtNumber;
+                return ThirdValue;
             }
-            throw new Exception("firstNumber,secondNumber,ThirdNumber are same");
+            throw new Exception("FirstValue,SecondValue,ThirdValue are same");
 
         }
 
-        public static string MaximumString(string first, string second, string third)
+        public static string MaximumString(string FirstValue, string SecondValue, string ThirdValue)
         {
 
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
             {
-                return first;
+                return FirstValue;
             }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            else if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)
             {
-                return second;
+                return SecondValue;
             }
-            else if (third.CompareTo(second) > 0 && third.CompareTo(first) > 0)
+            else if (ThirdValue.CompareTo(SecondValue) > 0 && ThirdValue.CompareTo(FirstValue) > 0)
             {
-                return third;
+                return ThirdValue;
             }
-            throw new Exception("first,second,Third are same");
+            throw new Exception("FirstValue,SecondValue,ThirdValue are same");
 
         }
     }
