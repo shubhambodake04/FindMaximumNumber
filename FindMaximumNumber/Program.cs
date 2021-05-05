@@ -11,7 +11,7 @@ namespace FindMaximumNumber
         static void Main(string[] args)
         {
 
-            Console.WriteLine("maximum number:");
+            /*Console.WriteLine("maximum number:");
             int MaxNumber = Check.MaximumInteger(11, 22, 33);
             Console.WriteLine(MaxNumber);
 
@@ -19,7 +19,15 @@ namespace FindMaximumNumber
             Console.WriteLine(MaxNumber1);
 
             string MaxNumber2 = Check.MaximumString("shubham","amol","ravi");
-            Console.WriteLine(MaxNumber2);
+            Console.WriteLine(MaxNumber2);*/
+
+            Check<int> MaximumInteger = new Check<int>(11, 22, 33);
+            Check<float> MaximumFloat = new Check<float>(4.3f, 2.3f, 3.3f);
+            Check<string> MaximumString = new Check<string>("shubham", "amol", "ravi");
+
+            Console.WriteLine("MaximumInteger:" + MaximumInteger.MaximumMethod());
+            Console.WriteLine("MaximumFloat:" + MaximumFloat.MaximumMethod());
+            Console.WriteLine("MaximumString:" + MaximumString.MaximumMethod());
 
             Console.ReadLine();
 
