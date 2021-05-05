@@ -19,19 +19,11 @@ namespace FindMaximumNumber
     public static T Maximum(T FirstValue, T SecondValue, T ThirdValue)
     {
 
-        if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
-        {
-            return FirstValue;
-        }
-        else if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)
-        {
-            return SecondValue;
-        }
-        else if (ThirdValue.CompareTo(SecondValue) > 0 && ThirdValue.CompareTo(FirstValue) > 0)
-        {
-            return ThirdValue;
-        }
-        throw new Exception("FirstValue,SecondValue,ThirdValue are same");
+        if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0) return FirstValue;
+        if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)return SecondValue;
+        if (ThirdValue.CompareTo(SecondValue) > 0 && ThirdValue.CompareTo(FirstValue) > 0) return ThirdValue;
+        
+        else throw new Exception("FirstValue,SecondValue,ThirdValue are same");
 
     }
     public T MaximumMethod()
